@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "DingTalk-JinBuTi";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../font/DingTalk JinBuTi.ttf") format("truetype");
+}
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background: #0B0B0B;
+}
+body .main-container {
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+body .main-container .header {
+  padding: 20px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+body .main-container .header .menu-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+body .main-container .logo-section {
+  height: calc(100svh - 153px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .main-container .logo-section .logo {
+  width: 500px;
+}
+body .main-container .logo-section .coming-soon {
+  margin-top: 60px;
+  width: 530px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .main-container .logo-section .coming-soon .text {
+  font-family: DingTalk-JinBuTi, sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  text-align: center;
+  color: #ffffff;
+}
+body .main-container .logo-section .coming-soon .dot-gradient {
+  width: 90px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .main-container .logo-section .dot-smallest {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #00AEEF;
+  opacity: 20%;
+}
+body .main-container .logo-section .dot-small {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #00AEEF;
+  opacity: 30%;
+}
+body .main-container .logo-section .dot-medium {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #00AEEF;
+  opacity: 50%;
+}
+body .main-container .logo-section .dot-largest {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #00AEEF;
+  opacity: 100%;
+}
+body .background-layer {
+  position: absolute;
+  z-index: 0;
+  width: 100vw;
+  height: 100svh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../images/background.webp");
+}
+body .background-layer .bg-left-bottom, body .background-layer .bg-right-top {
+  position: absolute;
+  width: 33vw;
+  aspect-ratio: 727/627;
+}
+body .background-layer .bg-left-bottom {
+  bottom: 0;
+  left: 0;
+}
+body .background-layer .bg-right-top {
+  top: 0;
+  right: 0;
+}
+@media (max-width: 768px) {
+  body .main-container .header {
+    padding: 20px 20px;
+  }
+  body .main-container .logo-section .logo {
+    width: 50%;
+  }
+  body .main-container .logo-section .coming-soon {
+    width: 60%;
+    gap: 14px;
+  }
+  body .main-container .logo-section .coming-soon .text {
+    font-size: 30px;
+  }
+  body .main-container .logo-section .coming-soon .dot-gradient {
+    width: 80px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
